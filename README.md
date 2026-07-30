@@ -16,7 +16,7 @@ mkdir -p ~/.local/bin && curl -sSL https://raw.githubusercontent.com/kara7z/cppr
 
 **clone (full repo):**
 ```sh
-mkdir -p ~/.local/bin && git clone https://github.com/kara7z/cpprun.git && cp cpprun/cpprun ~/.local/bin/ && chmod +x ~/.local/bin/cpprun && rm -rf cpprun
+git clone https://github.com/kara7z/cpprun.git ~/.local/share/cpprun && ln -sf ~/.local/share/cpprun/cpprun ~/.local/bin/cpprun
 ```
 
 ## Usage
