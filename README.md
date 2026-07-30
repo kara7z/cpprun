@@ -2,19 +2,22 @@
 
 Compile and run a single C++ file with one command.
 
+## Requirements
+
+- `g++` (install with `sudo pacman -S gcc` on Arch, `sudo apt install g++` on Debian/Ubuntu, etc.)
+- `~/.local/bin` in `PATH` (add `export PATH="$HOME/.local/bin:$PATH"` to `~/.zshrc` or `~/.bashrc`)
+
 ## Install
 
 **curl (single file):**
 ```sh
-curl -sSL https://raw.githubusercontent.com/kara7z/cpprun/main/cpprun -o ~/.local/bin/cpprun && chmod +x ~/.local/bin/cpprun
+mkdir -p ~/.local/bin && curl -sSL https://raw.githubusercontent.com/kara7z/cpprun/main/cpprun -o ~/.local/bin/cpprun && chmod +x ~/.local/bin/cpprun
 ```
 
 **clone (full repo):**
 ```sh
-git clone https://github.com/kara7z/cpprun.git && cp cpprun/cpprun ~/.local/bin/ && rm -rf cpprun
+mkdir -p ~/.local/bin && git clone https://github.com/kara7z/cpprun.git && cp cpprun/cpprun ~/.local/bin/ && chmod +x ~/.local/bin/cpprun && rm -rf cpprun
 ```
-
-Make sure `~/.local/bin` is in your `PATH` (add `export PATH="$HOME/.local/bin:$PATH"` to `~/.zshrc` or `~/.bashrc` if not already).
 
 ## Usage
 
