@@ -5,4 +5,4 @@ shift 1
 dir=$(dirname "$file")
 base=$(basename "${file%.*}")
 out="$dir/$base"
-g++ -std=c++17 -Wall -Wextra -Werror -o "$out" "$file" && "$out" "$@"
+g++ -std=c++17 -Wall -Wextra -o "$out" "$file" && "$out" "$@"
